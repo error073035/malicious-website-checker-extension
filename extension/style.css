@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 25px;
+  width: auto;
+  max-width: 500px;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #005580;
+}
+
+p {
+  font-size: 14px;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+#status-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+}
+
+#cyber-tip {
+  font-style: italic;
+  color: #2f4f4f;
+  font-size: 13px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e8f0fe;
+  border-radius: 4px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin: 15px 0;
+  padding: 8px 16px;
+  background-color: #005580;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003a55;
+}
+
+@media (max-width: 500px) {
+  body {
+    max-width: 100%;
+    padding: 15px;
+  }
+  p {
+    margin: 10px 0;
+  }
+  #cyber-tip {
+    margin-top: 12px;
+    padding: 8px;
+  }
+}

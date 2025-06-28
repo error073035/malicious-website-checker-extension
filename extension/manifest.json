@@ -1,0 +1,30 @@
+{
+  "name": "Malicious Website Blocker",
+  "version": "1.0.3",
+  "description": "Checks and blocks malicious and phishing websites by scanning URLs and webpage content using Google Safe Browsing",
+  "manifest_version": 3,
+  "permissions": ["tabs", "notifications", "storage", "declarativeNetRequest", "declarativeNetRequestWithHostAccess", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rule.json"
+      }
+    ]
+  }
+}
