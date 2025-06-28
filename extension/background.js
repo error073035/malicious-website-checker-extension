@@ -1,5 +1,5 @@
-const GS_API_KEY = "AIzaSyA5B9JBtp9z_KS4AsJjh5HbBf8FkE5nOcM";
-const VT_API_KEY = "f2593b25040c154ea23f11988fa98b13bd90b2dd95d916253f0784e82e88add6";
+const GS_API_KEY = "[your_api_key]";
+const VT_API_KEY = "[your_api_key]";
 const GS_API_URL = `https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${GS_API_KEY}`;
 const VT_URL_SCAN_URL = "https://www.virustotal.com/api/v3/urls";
 const VT_FILE_SCAN_URL = "https://www.virustotal.com/api/v3/files";
